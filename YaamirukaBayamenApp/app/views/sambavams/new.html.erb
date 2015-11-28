@@ -1,38 +1,46 @@
-<%= link_to 'Home', root_path %>
+<div class="container col-xs-6 vertical-align">
+  <h2>Add a new incident</h2>
 
 <%= form_tag sambavams_path do %>
     <%= hidden_field_tag :lat, @lat %>
     <%= hidden_field_tag :long, @long %>
 
-    <div>
+    <div class="form-group">
       <%= label_tag :name, 'Location' %>
-      <%= text_field_tag :name, @location, readonly: true %>
+      <%= text_field_tag :name, @location, readonly: true, class:"form-control" %>
     </div>
 
-    <div>
-      <%= label_tag :names, 'Suspects Name/Alias' %>
-      <%= text_field_tag :names %>
+    <div class="form-group">
+      <%= label_tag :names, 'Suspect Name/Alias' %>
+      <%= text_field_tag :names, '', class:"form-control" %>
     </div>
 
-    <div>
+    <div class="form-group">
       <%= label_tag :height, 'Height(in inches)' %>
-      <%= text_field_tag :height %>
+      <%= text_field_tag :height, '',class:"form-control" %>
     </div>
 
-    <div>
+    <div class="form-group">
       <%= label_tag :hair_style, 'Hair Style' %>
-      <%= select_tag :hair_style, options_for_select(['Unsure','Short','Medium','Long','Bald/Shaved']) %>
+      <%= select_tag :hair_style, options_for_select(['Unsure','Short','Medium','Long','Bald/Shaved']), class:"form-control" %>
     </div>
 
-    <div>
+    <div class="form-group">
       <%= label_tag :eye_colour, 'Eye Colour' %>
-      <%= select_tag :eye_colour, options_for_select(['Unsure','Blue','Brown','Black','Grey']) %>
+      <%= select_tag :eye_colour, options_for_select(['Unsure','Blue','Brown','Black','Grey']), class:"form-control" %>
     </div>
 
-    <div>
+    <div class="form-group">
       <%= label_tag :crime_description, 'Crime Description' %>
-      <%= text_area_tag :crime_description, '' %>
+      <%= text_area_tag :crime_description, '' , class:"form-control"%>
     </div>
 
-    <div><%= submit_tag "Submit Tip" %></div>
+    <div class="form-group">
+      <%= submit_tag "Submit Tip", class: "btn btn-success" %>
+      <%= link_to 'Home', root_path, class: "btn btn-primary" %>
+    </div>
+
 <% end %>
+
+</div>
+
