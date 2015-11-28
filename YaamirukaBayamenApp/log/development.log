@@ -1,0 +1,490 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-03 20:24:23 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 969ms (Views: 962.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-03 20:24:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-03 20:24:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-03 20:24:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-03 20:24:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-03 20:24:24 +0530
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-03 20:24:25 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 200 OK in 6227ms (Views: 0.4ms)
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-03 20:24:31 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6050ms (Views: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 30.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-03 20:29:20 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 200 OK in 6453ms (Views: 0.3ms)
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-03 20:29:26 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6035ms (Views: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 10:45:19 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 45.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 10:45:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 10:45:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 10:45:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 10:45:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 10:45:19 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 10:45:21 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 3149ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 10:45:24 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6361ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:23:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:22:in `each'
+  app/controllers/sambavams_controller.rb:22:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 10:53:14 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6203ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:23:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:22:in `each'
+  app/controllers/sambavams_controller.rb:22:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (10.0ms)
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 10:53:20 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6072ms (Views: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 10:54:19 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 10:54:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 10:54:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 10:54:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 10:54:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 10:54:19 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 10:54:20 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6145ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 10:54:26 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6160ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:23:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:22:in `each'
+  app/controllers/sambavams_controller.rb:22:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 10:55:48 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 87ms (Views: 86.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 10:55:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 10:55:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 10:55:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 10:55:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 10:55:49 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 10:55:49 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 5966ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 10:55:55 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6246ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:25:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:24:in `each'
+  app/controllers/sambavams_controller.rb:24:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 11:05:43 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 11:05:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 11:05:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 11:05:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 11:05:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 11:05:43 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 11:05:44 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6164ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 11:05:50 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6138ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:23:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:22:in `each'
+  app/controllers/sambavams_controller.rb:22:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 14:47:31 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 14:47:31 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 14:47:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 14:47:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 14:47:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 14:47:31 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 14:47:32 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 3247ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 14:47:35 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6200ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:23:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:22:in `each'
+  app/controllers/sambavams_controller.rb:22:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 16:44:28 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6077ms (Views: 0.1ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 16:44:34 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 6214ms
+
+NoMethodError (undefined method `bounds' for nil:NilClass):
+  app/controllers/sambavams_controller.rb:23:in `block in safe_routes'
+  app/controllers/sambavams_controller.rb:22:in `each'
+  app/controllers/sambavams_controller.rb:22:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 17:51:00 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 62.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 17:51:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 17:51:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 17:51:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 17:51:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 17:51:00 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 17:51:01 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 5991ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 17:51:07 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 200 OK in 6242ms (Views: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 17:56:24 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 63ms (Views: 62.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 17:56:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 17:56:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 17:56:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 17:56:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 17:56:24 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 17:56:25 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6270ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 17:56:31 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 200 OK in 6143ms (Views: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 18:26:37 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 5949ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 18:26:43 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 500 Internal Server Error in 5996ms
+
+NoMethodError (undefined method `each' for "":String):
+  app/controllers/sambavams_controller.rb:50:in `locations'
+  app/controllers/sambavams_controller.rb:12:in `safe_routes'
+
+
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/radhikaa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 18:27:10 +0530
+Processing by SambavamsController#index as HTML
+  Rendered sambavams/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 18:27:10 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-04 18:27:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 18:27:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-04 18:27:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-04 18:27:10 +0530
+
+
+Started GET "/plot" for 127.0.0.1 at 2015-10-04 18:27:11 +0530
+Processing by SambavamsController#plot as */*
+Completed 200 OK in 6052ms (Views: 0.2ms)
+
+
+Started GET "/safe_routes" for 127.0.0.1 at 2015-10-04 18:27:17 +0530
+Processing by SambavamsController#safe_routes as */*
+Completed 200 OK in 6246ms (Views: 0.3ms)

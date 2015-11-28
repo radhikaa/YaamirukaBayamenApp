@@ -1,0 +1,7 @@
+development:
+    url: https://api.clusterpoint.com
+    account_id: 1196
+    database: YamirukaBayame
+    username: Rajeswari Krishnakumar
+    password: raji2904
+    [debug_output: $stdout]

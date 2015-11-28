@@ -1,0 +1,8 @@
+== README
+
+CyberPatrol
+
+1. Run the rails app with : rails s
+2. After the app loads, click on the hot spots and other icons to see further information
+3. Rails version used : 4.0
+4. Database used : Clusterpoint
