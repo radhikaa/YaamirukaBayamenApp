@@ -1,41 +1,38 @@
-<form method="post" action="<%= sambavams_path %>">
-  <div>
-    <label for="location">Location</label>
-    <input type="text" id="location" value="<%= @location %>" />
-  </div>
-  <div>
-    <label for="names">Suspects Name/Alias</label>
-    <input type="text" id="names" title="Provide a comma separated list of names"/>
-  </div>
-  <div>
-    <label for="height">Height(in inches)</label>
-    <input type="text" id="height" />
-  </div>
-  <div>
-    <label for="hair_style">Hair Style</label>
-    <select name="hair_style" id="hair_style">
-      <option value="short">Short</option>
-      <option value="medium">Medium</option>
-      <option value="long">Long</option>
-      <option value="bald">Bald</option>
-      <option value="shaved">Shaved</option>
-    </select>
-  </div>
-  <div>
-    <label for="eye_colour">Eye colour</label>
-    <select name="eye_colour" id="eye_colour">
-      <option value="blue">Blue</option>
-      <option value="blue">Brown</option>
-      <option value="black">Black</option>
-      <option value="grey">Grey</option>
-      <option value="green">Green</option>
-      <option value="other">Other</option>
-    </select>
-  </div>
-  <div>
-    <label for="crime_description">Crime Description</label>
-    <textarea id="crime_description" placeholder="Provide a quick description about the incident"></textarea>
-  </div>
-  <input type="submit" value="Submit Tip" />
-</form>
 <%= link_to 'Home', root_path %>
+
+<%= form_tag sambavams_path do %>
+    <%= hidden_field_tag :lat, @lat %>
+    <%= hidden_field_tag :long, @long %>
+
+    <div>
+      <%= label_tag :name, 'Location' %>
+      <%= text_field_tag :name, @location, readonly: true %>
+    </div>
+
+    <div>
+      <%= label_tag :names, 'Suspects Name/Alias' %>
+      <%= text_field_tag :names %>
+    </div>
+
+    <div>
+      <%= label_tag :height, 'Height(in inches)' %>
+      <%= text_field_tag :height %>
+    </div>
+
+    <div>
+      <%= label_tag :hair_style, 'Hair Style' %>
+      <%= select_tag :hair_style, options_for_select(['Unsure','Short','Medium','Long','Bald/Shaved']) %>
+    </div>
+
+    <div>
+      <%= label_tag :eye_colour, 'Eye Colour' %>
+      <%= select_tag :eye_colour, options_for_select(['Unsure','Blue','Brown','Black','Grey']) %>
+    </div>
+
+    <div>
+      <%= label_tag :crime_description, 'Crime Description' %>
+      <%= text_area_tag :crime_description, '' %>
+    </div>
+
+    <div><%= submit_tag "Submit Tip" %></div>
+<% end %>

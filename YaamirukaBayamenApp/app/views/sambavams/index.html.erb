@@ -1,5 +1,5 @@
 <div>
-  <a id="add_tip" href="<%= new_path %>">Send us a tip to help you serve better</a>
+  <a id="add_tip" href="<%= new_path %>">Send us a tip to help us you serve better</a>
 </div>
 
 <div id="map"></div>
@@ -18,7 +18,7 @@
             placeMarkerAndPanTo(e.latLng, map);
         });
         function placeMarkerAndPanTo(latLng, map) {
-            if (marker != undefined) {marker.setMap(null)};
+            if (marker != undefined) {marker.setMap(null)}
             marker = new google.maps.Marker({
                 position: latLng,
                 map: map
@@ -28,7 +28,8 @@
                 if (status == google.maps.GeocoderStatus.OK) {
                     var url = document.getElementById("add_tip").href;
                     var baseUrl = url.split('?')[0];
-                    document.getElementById("add_tip").href=baseUrl+"?current_location="+data[1].address_components[0].long_name;
+                    debugger;
+                    document.getElementById("add_tip").href = baseUrl+"?name="+data[1].address_components[0].long_name + "&lat=" + latLng.lat() + "&long=" + latLng.lng();
                 }
             });
         }

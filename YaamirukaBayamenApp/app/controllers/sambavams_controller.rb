@@ -2,14 +2,18 @@ class SambavamsController < ApplicationController
   before_action :set_locations, only: [:plot, :safe_routes]
 
   def new
-    @location = params[:current_location]
+    @location = params[:name]
+    @lat = params[:lat]
+    @long = params[:long]
   end
 
   def index
   end
 
   def create
-    
+    doc = find_document(params[:lat], params[:long])
+    doc.present? ? update_document(doc[0]) : create_document(params)
+    redirect_to '/'
   end
 
   def plot
@@ -20,13 +24,11 @@ class SambavamsController < ApplicationController
     crisis_locations = locations(@locations)
     paths = []
     routes_json = routes_from_maps(request_url)
-    p "routes_json", routes_json["routes"].size
     routes_json["routes"].each do |route|
       path = construct_path(route)
       path = traverse_route(route, path, crisis_locations)
       paths << path
     end
-    p paths
     safe_routes = categorised_routes(paths)
     route_bounds = []
     safe_routes.each do |safe_route|
@@ -38,6 +40,39 @@ class SambavamsController < ApplicationController
   end
 
   private
+  def find_document(lat, long)
+    user = 'radhikab@thoughtworks.com'
+    password = 'radhikab'
+    user_id = '1201'
+    url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/_search.json"
+    resource = RestClient::Resource.new(url, user: user, password: password)
+    payload = {'query' => "<lat>#{lat}</lat><long>#{long}</long>"}
+    response = resource.post(payload.to_json)
+    JSON.parse(response.body)['documents']
+  end
+
+  def update_document(doc)
+    user = 'radhikab@thoughtworks.com'
+    password = 'radhikab'
+    user_id = '1201'
+    cluster_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/.json"
+    resource = RestClient::Resource.new(cluster_url, user: user, password: password)
+    payload = {'id' => doc['id'], 'occurences' => doc['occurences'].to_i + 1}.to_json
+    response = resource.post(payload)
+    response.body
+  end
+
+  def create_document(params)
+    user = 'radhikab@thoughtworks.com'
+    password = 'radhikab'
+    user_id = '1201'
+    cluster_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/.json"
+    resource = RestClient::Resource.new(cluster_url, user: user, password: password)
+    payload = {'id' => Time.now, 'lat' => params[:lat], 'long' => params[:long], 'name' => params[:name], 'occurences' => 1}.to_json
+    response = resource.post(payload)
+    response.body
+  end
+
   def set_locations
     params = '{"query":"*","docs":"100"}'
     user = 'radhikab@thoughtworks.com'
