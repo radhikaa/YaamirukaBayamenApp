@@ -9,7 +9,7 @@ class SambavamsController < ApplicationController
   end
 
   def create
-
+    
   end
 
   def plot
