@@ -524,7 +524,7 @@
         var colors = {"high": "#f03", "medium": "#FFA500"};
         $.get('/plot', function (data) {
             $.each(data["documents"], function (i, location) {
-                locations[i] = [location["lat"], location["long"], location["occurences"]];
+                locations[i] = [location["lat"], location["long"], location["occurences"], location["source"]];
             });
             $.each(locations, function (i, location) {
                 var color = "";
@@ -534,24 +534,38 @@
                     } else {
                         color = colors.high
                     }
-                    var markerOptions = {
-                        strokeColor: '#FF0000',
-                        strokeOpacity: 0.8,
-                        strokeWeight: 2,
-                        fillColor: color,
-                        fillOpacity: 0.35,
-                        map: map,
-                        center: new google.maps.LatLng(location[0], location[1]),
-                        radius: 600
-                    };
-                    var circle = new google.maps.Circle(markerOptions);
                     var infoWindow = new google.maps.InfoWindow({
                         content: "Occurences : " + location[2]
                     });
-                    google.maps.event.addListener(circle, 'click', function (e) {
-                        infoWindow.setPosition(e.latLng);
-                        infoWindow.open(map);
-                    });
+                    if (location[3] == 'user') {
+                        var iconUrl = 'https://google-developers.appspot.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+                        var image = new google.maps.MarkerImage(iconUrl, null, null, null, new google.maps.Size(50, 50));
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(location[0], location[1]),
+                            icon: image,
+                            map: map
+                        });
+                        google.maps.event.addListener(marker, 'click', function (e) {
+                            infoWindow.setPosition(e.latLng);
+                            infoWindow.open(map);
+                        });
+                    } else {
+                        var markerOptions = {
+                            strokeColor: '#FF0000',
+                            strokeOpacity: 0.8,
+                            strokeWeight: 2,
+                            fillColor: color,
+                            fillOpacity: 0.35,
+                            map: map,
+                            center: new google.maps.LatLng(location[0], location[1]),
+                            radius: 600
+                        };
+                        var circle = new google.maps.Circle(markerOptions);
+                        google.maps.event.addListener(circle, 'click', function (e) {
+                            infoWindow.setPosition(e.latLng);
+                            infoWindow.open(map);
+                        });
+                    }
                 }
             });
         });

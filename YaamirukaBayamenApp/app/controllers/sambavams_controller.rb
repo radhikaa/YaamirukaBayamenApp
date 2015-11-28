@@ -44,7 +44,7 @@ class SambavamsController < ApplicationController
     user = 'radhikab@thoughtworks.com'
     password = 'radhikab'
     user_id = '1201'
-    url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/_search.json"
+    url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamenProd/_search.json"
     resource = RestClient::Resource.new(url, user: user, password: password)
     payload = {'query' => "<lat>#{lat}</lat><long>#{long}</long>"}
     response = resource.post(payload.to_json)
@@ -55,7 +55,7 @@ class SambavamsController < ApplicationController
     user = 'radhikab@thoughtworks.com'
     password = 'radhikab'
     user_id = '1201'
-    cluster_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/.json"
+    cluster_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamenProd/.json"
     resource = RestClient::Resource.new(cluster_url, user: user, password: password)
     payload = {'id' => doc['id'], 'occurences' => doc['occurences'].to_i + 1}.to_json
     response = resource.post(payload)
@@ -66,9 +66,9 @@ class SambavamsController < ApplicationController
     user = 'radhikab@thoughtworks.com'
     password = 'radhikab'
     user_id = '1201'
-    cluster_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/.json"
+    cluster_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamenProd/.json"
     resource = RestClient::Resource.new(cluster_url, user: user, password: password)
-    payload = {'id' => Time.now, 'lat' => params[:lat], 'long' => params[:long], 'name' => params[:name], 'occurences' => 1}.to_json
+    payload = {'id' => Time.now, 'lat' => params[:lat], 'long' => params[:long], 'name' => params[:name], 'occurences' => 1, 'source' => 'user'}.to_json
     response = resource.post(payload)
     response.body
   end
@@ -78,7 +78,7 @@ class SambavamsController < ApplicationController
     user = 'radhikab@thoughtworks.com'
     password = 'radhikab'
     user_id = '1201'
-    fetch_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamen/_search.json"
+    fetch_url = "https://api-eu.clusterpoint.com/#{user_id}/YaamirukaBayamenProd/_search.json"
     @locations = locations_from_cluster(params, fetch_url, user, password)
   end
 
